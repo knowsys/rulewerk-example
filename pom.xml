@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>vlog4j_example</groupId>
+  <artifactId>vlog4j_example</artifactId>
+  <version>0.4.0</version>
+  
+  <name>VLog4j Examples</name>
+  
+  <properties>
+    <slf4jVersion>1.7.10</slf4jVersion>
+    <vlog4jVersion>0.4.0</vlog4jVersion>
+    <vlog4jGroupId>org.semanticweb.vlog4j</vlog4jGroupId>
+  </properties>
+  
+  <dependencies>
+    <dependency>
+      <groupId>${vlog4jGroupId}</groupId>
+      <artifactId>vlog4j-core</artifactId>
+      <version>${vlog4jVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>${vlog4jGroupId}</groupId>
+      <artifactId>vlog4j-parser</artifactId>
+      <version>${vlog4jVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>${vlog4jGroupId}</groupId>
+      <artifactId>vlog4j-owlapi</artifactId>
+      <version>${vlog4jVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>${vlog4jGroupId}</groupId>
+      <artifactId>vlog4j-graal</artifactId>
+      <version>${vlog4jVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>${vlog4jGroupId}</groupId>
+      <artifactId>vlog4j-rdf</artifactId>
+      <version>${vlog4jVersion}</version>
+    </dependency>
+    <dependency> 
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>${slf4jVersion}</version>
+	  </dependency>
+  </dependencies>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.7.0</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
