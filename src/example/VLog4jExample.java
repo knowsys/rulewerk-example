@@ -9,9 +9,9 @@ package example;
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -37,11 +37,11 @@ import org.semanticweb.vlog4j.parser.RuleParser;
 /**
  * This little example illustrates the use of VLog4j with several rules and data
  * sources. It can be modified to create own VLog4j applications.
- * 
+ *
  * For the sake of the example, we split inputs across several sources, although
  * one could get the same data more easily (all data used here is derived from
  * Wikidata).
- * 
+ *
  * @author Markus Kroetzsch
  *
  */
@@ -88,11 +88,11 @@ public class VLog4jExample {
 	 * restrict the logging messages that are shown on the console or to change
 	 * their formatting. See the documentation of Log4J for details on how to do
 	 * this.
-	 * 
+	 *
 	 * Note: The VLog C++ backend performs its own logging that is configured
 	 * independently with the reasoner. It is also possible to specify a separate
 	 * log file for this part of the logs.
-	 * 
+	 *
 	 * @param level the log level to be used
 	 */
 	static void configureLogging(Level level) {
@@ -114,12 +114,12 @@ public class VLog4jExample {
 	 * sub-genre relations from a CSV file, and combines them with some example
 	 * facts about musical artists to infer all of their genres (including indirec
 	 * ones higher up in the hierarchy).
-	 * 
+	 *
 	 * @return string of a knowledge base
 	 */
 	static String getArtistGenreRules() {
 		return "" // "Load hierarchy of musical genres from file:"
-				+ "@source subgenre(2) : load-csv('resources/music-subgenres.csv') . \n" //
+				+ "@source subgenre[2] : load-csv('resources/music-subgenres.csv') . \n" //
 				// Add some further facts about musical artists:
 				+ "genre(Radiohead,AlternativeRock) .  genre(Radiohead,NeoProgressiveRock) . \n" //
 				+ "genre(Boygenius,IndieRock) . \n" //
@@ -139,7 +139,7 @@ public class VLog4jExample {
 	 * rules are used to also compute those artists for which no homepage was found
 	 * (either Wikidata had no homepage, or themapping file did not contain a
 	 * Wikidata URI for the artist in the first place).
-	 * 
+	 *
 	 * @return string of a knowledge base
 	 */
 	static String getHomepageRules() {
@@ -147,8 +147,8 @@ public class VLog4jExample {
 		final String sparql = "?entity wdt:P856 ?homepage . "; // official website: ?homepage
 
 		return "" // Configure external data sources:
-				+ "@source homepage(2) : sparql(<" + sparqlServiceUrl + ">, 'entity,homepage', '" + sparql + "') .\n" //
-				+ "@source wdToMb(3) : load-rdf('resources/wikidataMusicBrainz.nt') . \n\n" //
+				+ "@source homepage[2] : sparql(<" + sparqlServiceUrl + ">, 'entity,homepage', '" + sparql + "') .\n" //
+				+ "@source wdToMb[3] : load-rdf('resources/wikidataMusicBrainz.nt') . \n\n" //
 				// The following facts connect artists with their MusicBrainz identifier:
 				+ "musicBrainzId(Boygenius, '3ceeddbd-fba5-4bdb-99f7-2d028ed5afda') . \n" //
 				+ "musicBrainzId(BandaInternationale, 'b2b6166b-4746-4734-836d-3ac43f77938b') . \n" //
