@@ -6,10 +6,9 @@ How to run
 
 The project uses Maven to manage dependencies. You can import it into any modern Java IDE, e.g., Eclipse, and run it as a stand-alone Java program.
 
-Alternatively, you can also run it via Maven by executing the following commands:
+Alternatively, you can also run it via Maven by executing the following command:
 ```
-mvn compile
-mvn exec:java -Dexec.mainClass="example.VLog4jExample"
+mvn compile exec:java
 ```
 
 The code requires Java 1.8 or above to run.
