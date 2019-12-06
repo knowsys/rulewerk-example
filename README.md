@@ -1,5 +1,5 @@
 # VLog4j Example
-Example project that shows the use of [VLog4j](https://github.com/knowsys/vlog4j), ad that can be modified to build own projects.
+Example project that shows the use of [VLog4j](https://github.com/knowsys/vlog4j), and that can be modified to build own projects.
 
 How to run
 ----------
