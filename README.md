@@ -1,5 +1,5 @@
-# VLog4j Example
-Example project that shows the use of [VLog4j](https://github.com/knowsys/vlog4j), and that can be modified to build own projects.
+# Rulewerk Example
+Example project that shows the use of [Rulewerk](https://github.com/knowsys/rulewerk), and that can be modified to build own projects.
 
 How to run
 ----------

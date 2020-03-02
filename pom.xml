@@ -1,42 +1,42 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>vlog4j_example</groupId>
-	<artifactId>vlog4j_example</artifactId>
-	<version>0.5.0</version>
+	<groupId>rulewerk_example</groupId>
+	<artifactId>rulewerk_example</artifactId>
+	<version>0.6.0-SNAPSHOT</version>
 
-	<name>VLog4j Examples</name>
+	<name>Rulewerk Examples</name>
 
 	<properties>
 		<slf4jVersion>1.7.10</slf4jVersion>
-		<vlog4jVersion>0.5.0</vlog4jVersion>
-		<vlog4jGroupId>org.semanticweb.vlog4j</vlog4jGroupId>
+		<rulewerkVersion>0.6.0-SNAPSHOT</rulewerkVersion>
+		<rulewerkGroupId>org.semanticweb.rulewerk</rulewerkGroupId>
 	</properties>
 
 	<dependencies>
 		<dependency>
-			<groupId>${vlog4jGroupId}</groupId>
-			<artifactId>vlog4j-core</artifactId>
-			<version>${vlog4jVersion}</version>
+			<groupId>${rulewerkGroupId}</groupId>
+			<artifactId>rulewerk-core</artifactId>
+			<version>${rulewerkVersion}</version>
 		</dependency>
 		<dependency>
-			<groupId>${vlog4jGroupId}</groupId>
-			<artifactId>vlog4j-parser</artifactId>
-			<version>${vlog4jVersion}</version>
+			<groupId>${rulewerkGroupId}</groupId>
+			<artifactId>rulewerk-parser</artifactId>
+			<version>${rulewerkVersion}</version>
 		</dependency>
 		<dependency>
-			<groupId>${vlog4jGroupId}</groupId>
-			<artifactId>vlog4j-owlapi</artifactId>
-			<version>${vlog4jVersion}</version>
+			<groupId>${rulewerkGroupId}</groupId>
+			<artifactId>rulewerk-owlapi</artifactId>
+			<version>${rulewerkVersion}</version>
 		</dependency>
 		<dependency>
-			<groupId>${vlog4jGroupId}</groupId>
-			<artifactId>vlog4j-graal</artifactId>
-			<version>${vlog4jVersion}</version>
+			<groupId>${rulewerkGroupId}</groupId>
+			<artifactId>rulewerk-graal</artifactId>
+			<version>${rulewerkVersion}</version>
 		</dependency>
 		<dependency>
-			<groupId>${vlog4jGroupId}</groupId>
-			<artifactId>vlog4j-rdf</artifactId>
-			<version>${vlog4jVersion}</version>
+			<groupId>${rulewerkGroupId}</groupId>
+			<artifactId>rulewerk-rdf</artifactId>
+			<version>${rulewerkVersion}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -68,7 +68,7 @@
 					<cleanupDaemonThreads>false</cleanupDaemonThreads>
 					<!-- set main class, so we won't need to specify
 					     it on the command line. -->
-					<mainClass>example.VLog4jExample</mainClass>
+					<mainClass>example.RulewerkExample</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>

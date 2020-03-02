@@ -2,16 +2,16 @@ package example;
 
 /*-
  * #%L
- * VLog4j Example
+ * Rulewerk Examples
  * %%
- * Copyright (C) 2019 VLog4j Developers
+ * Copyright (C) 2018 - 2020 Rulewerk Developers
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- *
+ * 
  *      http://www.apache.org/licenses/LICENSE-2.0
- *
+ * 
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -26,17 +26,17 @@ import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PatternLayout;
-import org.semanticweb.vlog4j.core.model.api.PositiveLiteral;
-import org.semanticweb.vlog4j.core.reasoner.KnowledgeBase;
-import org.semanticweb.vlog4j.core.reasoner.QueryResultIterator;
-import org.semanticweb.vlog4j.core.reasoner.Reasoner;
-import org.semanticweb.vlog4j.core.reasoner.implementation.VLogReasoner;
-import org.semanticweb.vlog4j.parser.ParsingException;
-import org.semanticweb.vlog4j.parser.RuleParser;
+import org.semanticweb.rulewerk.core.model.api.PositiveLiteral;
+import org.semanticweb.rulewerk.core.reasoner.KnowledgeBase;
+import org.semanticweb.rulewerk.core.reasoner.QueryResultIterator;
+import org.semanticweb.rulewerk.core.reasoner.Reasoner;
+import org.semanticweb.rulewerk.core.reasoner.implementation.VLogReasoner;
+import org.semanticweb.rulewerk.parser.ParsingException;
+import org.semanticweb.rulewerk.parser.RuleParser;
 
 /**
- * This little example illustrates the use of VLog4j with several rules and data
- * sources. It can be modified to create own VLog4j applications.
+ * This little example illustrates the use of Rulewerk with several rules and data
+ * sources. It can be modified to create own Rulewerk applications.
  *
  * For the sake of the example, we split inputs across several sources, although
  * one could get the same data more easily (all data used here is derived from
@@ -45,7 +45,7 @@ import org.semanticweb.vlog4j.parser.RuleParser;
  * @author Markus Kroetzsch
  *
  */
-public class VLog4jExample {
+public class RulewerkExample {
 
 	static String sparqlServiceUrl = "https://query.wikidata.org/sparql";
 
