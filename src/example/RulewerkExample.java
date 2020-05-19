@@ -30,9 +30,9 @@ import org.semanticweb.rulewerk.core.model.api.PositiveLiteral;
 import org.semanticweb.rulewerk.core.reasoner.KnowledgeBase;
 import org.semanticweb.rulewerk.core.reasoner.QueryResultIterator;
 import org.semanticweb.rulewerk.core.reasoner.Reasoner;
-import org.semanticweb.rulewerk.core.reasoner.implementation.VLogReasoner;
 import org.semanticweb.rulewerk.parser.ParsingException;
 import org.semanticweb.rulewerk.parser.RuleParser;
+import org.semanticweb.rulewerk.reasoner.vlog.VLogReasoner;
 
 /**
  * This little example illustrates the use of Rulewerk with several rules and data
