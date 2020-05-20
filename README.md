@@ -11,4 +11,10 @@ Alternatively, you can also run it via Maven by executing the following command:
 mvn compile exec:java
 ```
 
+If you add another example class and want to run that, you can invoke Maven as follows:
+```
+mvn compile exec:java -Dexec.mainClass=example.ExampleClassName
+```
+If not specified, the `mainClass` defaults to `example.RulewerkExample`.
+
 The code requires Java 1.8 or above to run.
