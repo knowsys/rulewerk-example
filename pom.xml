@@ -8,7 +8,7 @@
 
 	<properties>
 		<slf4jVersion>1.7.10</slf4jVersion>
-		<rulewerkVersion>0.6.0-SNAPSHOT</rulewerkVersion>
+		<rulewerkVersion>0.7.0-SNAPSHOT</rulewerkVersion>
 		<rulewerkGroupId>org.semanticweb.rulewerk</rulewerkGroupId>
 	</properties>
 
